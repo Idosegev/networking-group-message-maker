@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Satzah Networking Message Maker</title>
+</head>
+  <body>
+    <div class="pic">
+      <img src="icon-128.png"></img>
+    </div>
+    
+    
+    <form id="createMessage">
+      
+        <label class="custom-field" id="sender_label">
+           
+          <input type="text"  id="sender_id" name="sender" placeholder="&nbsp;"/>
+          <span class="placeholder" >שם הבוגר</span>
+          
+        </label>
+      </p>
+      
+      
+      
+      <p>
+        <label class="custom-field" id="year_label">
+          <!-- <p>מחזור הצוות של השולח </p> -->
+          <input type="text" id="year_id" name="year" placeholder="&nbsp;">
+          <span class="placeholder">מחזור הצוות של השולח </span>
+        </label>
+      </p>
+      <p>
+        <label class="custom-field" id="title_label">
+          <!-- <p>מה מבקש או מציע הבוגר</p> -->
+          
+          <textarea type="text" id="title_id" maxlength="50" name="headText" placeholder="&nbsp;"></textarea>
+          <span class="placeholder-text">מה מבקש או מציע הבוגר</span>
+          
+        </label>
+      </p>
+      <p>
+        <label class="custom-field" id="body_label">
+         
+          <textarea type="text"  id="body_id" name="body" placeholder="&nbsp;"></textarea>
+          <span class="placeholder-text">נא הכנס את גוף ההודעה</span>
+        </label>
+      </p>
+      <p>
+        <label class="custom-field" id="tel_label">
+         
+          <input type="text" id="tel_id" name="tel" style="letter-spacing: -1.5px;" placeholder="&nbsp;">
+          <span class="placeholder"> מספר הטלפון של השולח</span>
+        </label>
+      </p>
+      <p>
+        <button>צור הודעה והעתק אותה</button>
+      </p>
+    </form>
+    <button id="clear">נקה הכל</button>
+    <script src="functions.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
+
